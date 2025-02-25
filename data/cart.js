@@ -31,7 +31,7 @@ export function saveToStorage(){
         if(productId===cartItem.productId){
           matchingItem=cartItem;
         }
-      })
+      });
 
       if(matchingItem){
         matchingItem.quantity+=1;
@@ -58,4 +58,21 @@ export function saveToStorage(){
     });
     cart=newCart;
     saveToStorage();
+  }
+
+
+  // function to update delivery option
+  export function updateDeliveryOption(productId,deliveryOptionId){
+    let matchingItem;
+
+      cart.forEach((cartItem)=>{
+        if(productId===cartItem.productId){
+          matchingItem=cartItem;
+        }
+      });
+
+      matchingItem.deliveryOptionId=deliveryOptionId;
+
+      saveToStorage();
+
   }
