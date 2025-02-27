@@ -1,6 +1,6 @@
 // this file is developed to test all possibe test cases for working of format currency function
 
-import { formatCurrency } from "../scripts/utils/money.js";
+import { formatCurrency } from "../../scripts/utils/money.js";
 
 console.log('test suit: formatCurrancy');
 
