@@ -82,4 +82,5 @@ function renderProductsGrid() {
       upadateCartQuantity();
     });
   });
+  upadateCartQuantity();
 }
